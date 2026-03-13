@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Developer Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+<h2>DevCollab</h2>
+<input type="text" placeholder="Search">
+</div>
+
+<div class="sidebar">
+<ul>
+<li>Dashboard</li>
+<li>Projects</li>
+<li>Tasks</li>
+<li>Teams</li>
+<li>Issues</li>
+<li>Settings</li>
+</ul>
+</div>
+
+<div class="main">
+
+<div class="cards">
+<div class="card">Projects: 5</div>
+<div class="card">Tasks: <span id="taskCount">2</span></div>
+<div class="card">Team Members: 4</div>
+<div class="card">Open Issues: 1</div>
+</div>
+
+<div class="section">
+<h3>Task Manager</h3>
+
+<input id="taskInput" placeholder="Enter new task">
+<button onclick="addTask()">Add Task</button>
+
+<table id="taskTable">
+
+<tr>
+<th>Task</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Build login API</td>
+<td>In Progress</td>
+</tr>
+
+<tr>
+<td>Create dashboard UI</td>
+<td>Pending</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
